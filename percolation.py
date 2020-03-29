@@ -19,7 +19,6 @@ def generate_grid_array(size):
     grid_list = [grid(i) for i in range(n)]
     return grid_list
     
-    
 
 #找到根
 def find_root(grid_list,id_1):
@@ -94,3 +93,5 @@ def percolation(size):
         flag = percolate(grid_list,size)
         #print("flag:",flag)
     return y/len(grid_list)
+#测试
+percolation(10)
